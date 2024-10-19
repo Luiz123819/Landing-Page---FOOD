@@ -1,0 +1,21 @@
+footer{
+    background-color: rgba(255, 254, 158, 1);
+}
+#footer_items{
+    display: flex;
+    justify-content: space-between;
+    /*    Cima / Esquerda  / Baixo / Direita */
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+#copyrigth{
+    color: var(--color-neutral-9);
+    font-weight: 600;
+}
+@media screen and (max-width:600px) {
+    #footer_items{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <!-- Link ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <title>Landing Page - FOOD</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <nav class="nav-bar">
+            <!-- Logo -->
+            <i class="fa-solid fa-burger" id="nav-logo"> Food</i>
+            <!-- LIST___Links nav-bar -->
+            <ul id="nav-list">
+                <!-- active é colocada na primeira li para dizer que ela sempre vai iniciar apartir da primeira li -->
+                <li class="nav-item active">
+                    <a href="#home" id="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" id="nav-link">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks" id="nav-link">Avaliações</a>
+                </li>
+            </ul>
+            <!-- Btn Nav-Bar -->
+            <a href="#menu" id="nav-link">
+            <button class="btn-default">
+                Pedir Aqui
+            </button>
+            </a>
+            <!-- Btn Nav-Bar Icone Mobile -->
+            <button id="mobile-icon">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Nav-Bar Mobile -->
+        <div id="mobile_menu">
+            <!-- LIST___Links mobile_menu -->
+            <ul id="nav-list-mobile">
+                <li class="nav-item active">
+                    <a href="#home" id="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" id="nav-link">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks" id="nav-link">Avaliações</a>
+                </li>
+                <button class="btn-default">
+                    Pedir Aqui
+                </button>
+            </ul>
+
+        </div>
+
+    </header>
+    <!-- Fim nav-bar -->
+    <!--------------------------- -->
+    <!-- Home -->
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <!-- TextoButtonsHome -->
+            <div id="cta">
+                <h1 class="title">
+                    O sabor vai até
+                    <span>você</span>
+                </h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. A hic, quae.
+                </p>
+                <!-- CtaButtons -->
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">Ver cardápio</a>
+                    <!--  -->
+                    <!-- Liga pro numero digitado no href - tel: número que vai ser ligado -->
+                    <a href="tel:+55 011 96911-0335" id="phone_button" >
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (11) 96911-0335
+                    </a>
+                </div>
+                <!-- SocialMedia -->
+                <div class="socia-media-buttons">
+                    <!-- Whats -->
+                    <a href="https://web.whatsapp.com/"  target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <!-- Insta -->
+                    <a href="https://www.instagram.com/luiz_dev_web/"  target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- Face -->
+                    <a href="https://www.facebook.com/fernando.biondo.9"  target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+            </div>
+            <!-- BannerHome -->
+            <div id="banner">
+                <!-- Imagem -->
+                <img src="Imagens/hero.png" alt>
+            </div>
+        </section>
+    </main>
+    <!-- Fim home -->
+    <!--------------------------- -->
+    <!-- Menu -->
+    <section id="menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+        <!-- Dishes -->
+        <div id="dishes">
+            <!-- Prato 01 -->
+            <div class="dish">
+                <!-- Heart prato -->
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!-- Imagem dishe - prato -->
+                <img src="Imagens/dish.png" class="dish-image" alt>
+                <!-- Prato -->
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+                <!-- Descrição prato -->
+                <span class="dish-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                </span>
+                <!-- Estrelas-Aaliações -->
+                <div id="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <!-- Preço prato -->
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Prato 02 -->
+            <div class="dish">
+                <!-- Heart prato -->
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!-- Imagem dishe - prato -->
+                <img src="Imagens/dish2.png" class="dish-image" alt>
+                <!-- Prato -->
+                <h3 class="dish-title">
+                    Lorem Ipsum 02
+                </h3>
+                <!-- Descrição prato -->
+                <span class="dish-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                </span>
+                <!-- Estrelas-Aaliações -->
+                <div id="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <!-- Preço prato -->
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Prato 03 -->
+            <div class="dish">
+                <!-- Heart prato -->
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!-- Imagem dishe - prato -->
+                <img src="Imagens/dish3.png" class="dish-image" alt>
+                <!-- Prato -->
+                <h3 class="dish-title">
+                    Lorem Ipsum 03
+                </h3>
+                <!-- Descrição prato -->
+                <span class="dish-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                </span>
+                <!-- Estrelas-Aaliações -->
+                <div id="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <!-- Preço prato -->
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Prato 04 -->
+            <div class="dish">
+                <!-- Heart prato -->
+                <div id="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!-- Imagem dishe - prato -->
+                <img src="Imagens/dish4.png" class="dish-image" alt>
+                <!-- Prato -->
+                <h3 class="dish-title">
+                    Lorem Ipsum 04
+                </h3>
+                <!-- Descrição prato -->
+                <span class="dish-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                </span>
+                <!-- Estrelas-Aaliações -->
+                <div id="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <!-- Preço prato -->
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fim menu -->
+    <!--------------------------- -->
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <!-- Imagem testimonials -->
+        <img src="Imagens/chef.png" id="testimonial_chef" alt="">
+        <!-- Testimonias content -->
+        <div id="testimonials-content">
+            <h2 class="section-title">
+                Depoimentos
+            </h2>
+            <h3 class="section-subtitle">
+                O que os clientes falam sobre nós
+            </h3>
+            <!-- Feedbacks -->
+            <!-- Feedback 01 -->
+            <div id="feedbacks">
+                <!-- Feedback em si -->
+                <div class="feedback">
+
+                    <!-- Avatar -->
+                    <img src="Imagens/avatar.png" alt="" class="feedback-avatar">
+                    <!-- Feedback content -->
+                    <div class="feedback-content">
+                        <!-- Nome avatar -->
+                        <p>
+                            <b>Josi</b>
+
+                            <!-- Estrela avatar -->
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </span>
+                        </p>
+                        <!-- Comentario avatar -->
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat praesentium corrupti
+                            consequatur possimus ea, tempore."
+                        </p>
+                    </div>
+                </div>
+                <!-- Feedback 02 -->
+                <!-- Feedback em si -->
+                <div class="feedback">
+
+                    <!-- Avatar -->
+                    <img src="Imagens/avatar.png" alt="" class="feedback-avatar">
+                    <!-- Feedback content -->
+                    <div class="feedback-content">
+                        <!-- Nome avatar -->
+                        <p>
+                            <b>Roberta</b>
+
+                            <!-- Estrela avatar -->
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </span>
+                        </p>
+                        <!-- Comentario avatar -->
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat praesentium corrupti
+                            consequatur possimus ea, tempore."
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Button testimonials -->
+            <button class="btn-default">
+                <a href="https://support.google.com/maps/answer/6230175?hl=pt-BR&co=GENIE.Platform%3DDesktop"
+                    id="nav-link" target="_blank"> Ver mais avaliações</a>
+
+            </button>
+        </div>
+    </section>
+    <!-- Fim testimoniais -->
+    <!--------------------------- -->
+    <!-- Footer -->
+    <footer>
+        <img src="Imagens/wave (1).svg" alt="">
+        <!-- Footer items -->
+        <div id="footer_items">
+            <span id="copyrigth">
+                &copy 2024 Luiz Fernando
+            </span>
+            <!-- SocialMedia -->
+            <div class="socia-media-buttons">
+                <!-- Whats -->
+
+                <a href="https://wa.me/5511969110335" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- Insta -->
+                <a href="https://www.instagram.com/luiz_dev_web/"  target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- Face -->
+                <a href="https://www.facebook.com/fernando.biondo.9"  target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+    <!-- Fim footer -->
+    <!-- JavaScript -->
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

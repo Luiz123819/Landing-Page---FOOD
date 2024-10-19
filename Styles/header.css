@@ -1,0 +1,81 @@
+header{
+    padding: 28px 8%;
+    /* Para fixar o menu topo na tela */
+    position: sticky;
+    top: 0;
+    background-color:#fff9ea ;
+    z-index: 3;
+}
+/* Mobile_Menu */
+#mobile_menu{
+    display: none;
+}
+#mobile-icon{
+    display: none;
+}
+/* -------------------------- */
+.nav-bar{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px ;
+    cursor: pointer;
+}
+#nav-logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary-5);
+}
+#nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #854747ea;
+    cursor: pointer;
+   
+}
+.nav-item.active #nav-link{
+    color: var(--color-neutral-9);
+    border-bottom: 3px solid var(--color-primary-3);
+    
+}
+
+/* Resposivo */
+@media screen and (max-width:1170px) {
+    /* Topo Mobile */
+    #nav-list, #nav-bar {
+        display: none;
+    }
+    header .btn-default{
+        display: none;
+    }
+    #mobile-icon{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    /* Se mobile-menu tiver com a classe active */
+    #mobile_menu.active01{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    #nav-list-mobile .nav-item{
+        list-style: none;
+        margin-top:10px ;
+    }
+    #mobile_menu .btn-default{
+        display: block;
+       margin:20px auto;
+       width: 100%;
+    }
+    /* ------------------- */
+}
